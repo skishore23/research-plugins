@@ -1,0 +1,28 @@
+{
+  "name": "heimdall-policy-lab",
+  "version": "0.1.0",
+  "description": "Draft and statically check Heimdall policies using its original JSON schema and a source-derived guard catalog.",
+  "license": "MIT",
+  "author": {
+    "name": "Kishore Shimikeri"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Heimdall Policy Lab",
+    "shortDescription": "Check agent policy structure",
+    "longDescription": "Draft and statically check Heimdall policies using its original JSON schema and a source-derived guard catalog. Find unknown fields, missing parameter names, invalid compositions and fail-open settings. No gateway, credentials or model calls needed. Does not enforce policies, validate runtime parameter semantics or certify compliance. Requires Python 3.11+, jsonschema, PyYAML and file/shell access.",
+    "developerName": "Kishore Shimikeri",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Draft a Heimdall policy allowing only read_story and plan_shots tools.",
+      "Check this Heimdall policy for structural mistakes and fail-open settings.",
+      "Show the parameters for the tools.allowlist guard."
+    ],
+    "logo": "./assets/icon.png",
+    "composerIcon": "./assets/icon.png",
+    "websiteURL": "https://skishore23.github.io/research-plugins/heimdall-policy-lab/",
+    "privacyPolicyURL": "https://skishore23.github.io/research-plugins/heimdall-policy-lab/privacy.html",
+    "termsOfServiceURL": "https://skishore23.github.io/research-plugins/heimdall-policy-lab/terms.html"
+  }
+}

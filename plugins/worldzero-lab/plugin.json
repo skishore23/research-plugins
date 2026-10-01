@@ -1,0 +1,41 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "worldzero-lab",
+  "version": "0.1.0",
+  "description": "Run paired built-in agent baselines in WorldZero simulated worlds, inspect measured outcomes and verify deterministic replay.",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Kishore Shimikeri"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "WorldZero Lab",
+        "shortDescription": "Run reproducible agent trials",
+        "longDescription": "Run paired built-in agent baselines in WorldZero simulated worlds, inspect measured outcomes and verify deterministic replay. Includes the original research kernel and bounded offline commands. These demonstrations do not run LLM inference or certify causal discovery. Requires Python 3.11+, NumPy and a host with file and shell access.",
+        "developerName": "Kishore Shimikeri",
+        "category": "Productivity",
+        "capabilities": [],
+        "defaultPrompt": [
+          "Compare forager and experimenter on seed 17 with a 100-decision budget.",
+          "Run the four built-in baselines on two matching seeds and explain censoring.",
+          "Save the traces for a small reproducible WorldZero comparison."
+        ],
+        "logo": "./assets/icon.png",
+        "composerIcon": "./assets/icon.png",
+        "websiteURL": "https://skishore23.github.io/research-plugins/worldzero-lab/",
+        "supportURL": "https://skishore23.github.io/research-plugins/worldzero-lab/support.html",
+        "privacyPolicyURL": "https://skishore23.github.io/research-plugins/worldzero-lab/privacy.html",
+        "termsOfServiceURL": "https://skishore23.github.io/research-plugins/worldzero-lab/terms.html"
+      },
+      "publication": {
+        "release_notes": "Initial portable release with source-pinned tools, workflow skills, examples and verification.",
+        "countries": []
+      },
+      "review": {
+        "commerce": false,
+        "commerce_description": "Free distribution. No purchases, subscriptions or payment collection in this plugin. Host software may have separate costs."
+      }
+    }
+  }
+}

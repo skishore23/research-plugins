@@ -1,0 +1,41 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "comfy-story-planner",
+  "version": "0.1.0",
+  "description": "Turn a film idea into a continuity-aware shot plan, validate exact timing, compile candidate prompts and export authored dialogue as SRT.",
+  "license": "AGPL-3.0-only",
+  "author": {
+    "name": "Kishore Shimikeri"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Comfy Story Planner",
+        "shortDescription": "Plan shots that stay coherent",
+        "longDescription": "Turn a film idea into a continuity-aware shot plan, validate exact timing, compile candidate prompts and export authored dialogue as SRT. Uses original Comfy Story contracts. No GPU needed for planning; does not render video or verify visual continuity. Requires Python 3.11+ and a host with file and shell access.",
+        "developerName": "Kishore Shimikeri",
+        "category": "Productivity",
+        "capabilities": [],
+        "defaultPrompt": [
+          "Plan a 12-second film about lending a key, with three shots and consistent ownership.",
+          "Check my film plan for timing and continuity errors.",
+          "Export the dialogue in my film plan as timed SRT subtitles."
+        ],
+        "logo": "./assets/icon.png",
+        "composerIcon": "./assets/icon.png",
+        "websiteURL": "https://skishore23.github.io/research-plugins/comfy-story-planner/",
+        "supportURL": "https://skishore23.github.io/research-plugins/comfy-story-planner/support.html",
+        "privacyPolicyURL": "https://skishore23.github.io/research-plugins/comfy-story-planner/privacy.html",
+        "termsOfServiceURL": "https://skishore23.github.io/research-plugins/comfy-story-planner/terms.html"
+      },
+      "publication": {
+        "release_notes": "Initial portable release with source-pinned tools, workflow skills, examples and verification.",
+        "countries": []
+      },
+      "review": {
+        "commerce": false,
+        "commerce_description": "Free distribution. No purchases, subscriptions or payment collection in this plugin. Host software may have separate costs."
+      }
+    }
+  }
+}

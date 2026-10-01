@@ -1,0 +1,32 @@
+{
+  "repository": "https://github.com/skishore23/comfy-story",
+  "commit": "b67d8e31ce7946ce94b124a2335df864ae06d828",
+  "license": "AGPL-3.0-only",
+  "files": [
+    {
+      "source": "src/comfy_story/film_io.py",
+      "packaged": "vendor/comfy_story/film_io.py",
+      "sha256": "7713de62477677dd75493bb333ec8290162afbed37c41e74568eb0bf2b68d6b0"
+    },
+    {
+      "source": "src/comfy_story/film_plan.py",
+      "packaged": "vendor/comfy_story/film_plan.py",
+      "sha256": "d9e059b6861991b16469f6a3dfc295d3c79f82133cb3b3e6bf27daeba2b030ba"
+    },
+    {
+      "source": "src/comfy_story/film_narrative.py",
+      "packaged": "vendor/comfy_story/film_narrative.py",
+      "sha256": "5aa509878dd3d474d33e48fbb5186e7722d72d0bffcf53e169f30701ca22510b"
+    },
+    {
+      "source": "src/comfy_story/film_retell.py",
+      "packaged": "vendor/comfy_story/film_retell.py",
+      "sha256": "0867b25f1f23f712966f965428fc5baa143b78628725e093368602a4d07ef675"
+    },
+    {
+      "source": "src/comfy_story/story_contracts.py",
+      "packaged": "vendor/comfy_story/story_contracts.py",
+      "sha256": "021a56289f2221a101a8c8b6b5432886a61fb4f62f5c0d6273c0a8c9f0de1ae9"
+    }
+  ]
+}

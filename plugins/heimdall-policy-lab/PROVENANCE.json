@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/skishore23/heimdall",
+  "commit": "a7013fe28d8a82222d0722b7f2aaa01300ed9f1c",
+  "license": "MIT",
+  "files": [
+    {
+      "source": "heimdall/policy_schema.py",
+      "packaged": "vendor/policy.schema.json",
+      "sha256": "cded4467ac8d40d47b8046d008b24a2faae79bace03e544b669497b980edadd9"
+    }
+  ]
+}

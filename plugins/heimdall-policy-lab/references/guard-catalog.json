@@ -1,0 +1,412 @@
+{
+  "pii.redact": {
+    "parameters": [
+      "types",
+      "mode"
+    ],
+    "required": [
+      "types"
+    ],
+    "variadic": false,
+    "source": "guards/pii/guards.py"
+  },
+  "pii.detect": {
+    "parameters": [
+      "types",
+      "threshold",
+      "severity"
+    ],
+    "required": [
+      "types"
+    ],
+    "variadic": false,
+    "source": "guards/pii/guards.py"
+  },
+  "tools.allowlist": {
+    "parameters": [
+      "allowed_tools",
+      "severity"
+    ],
+    "required": [
+      "allowed_tools"
+    ],
+    "variadic": false,
+    "source": "guards/tools/guards.py"
+  },
+  "tools.denylist": {
+    "parameters": [
+      "denied_tools",
+      "severity"
+    ],
+    "required": [
+      "denied_tools"
+    ],
+    "variadic": false,
+    "source": "guards/tools/guards.py"
+  },
+  "tools.args.validator": {
+    "parameters": [
+      "required_args",
+      "forbidden_patterns",
+      "max_string_length",
+      "severity"
+    ],
+    "required": [],
+    "variadic": false,
+    "source": "guards/tools/guards.py"
+  },
+  "tools.result.filter": {
+    "parameters": [
+      "max_result_length",
+      "forbidden_patterns",
+      "redact_patterns",
+      "severity"
+    ],
+    "required": [],
+    "variadic": false,
+    "source": "guards/tools/guards.py"
+  },
+  "onnx.configurable": {
+    "parameters": [
+      "model_id",
+      "threshold",
+      "target_labels",
+      "severity",
+      "performance_budget_ms",
+      "ensemble_models",
+      "preprocessing"
+    ],
+    "required": [
+      "model_id"
+    ],
+    "variadic": false,
+    "source": "guards/onnx/guards.py"
+  },
+  "onnx.financial": {
+    "parameters": [
+      "model_id",
+      "threshold"
+    ],
+    "required": [],
+    "variadic": true,
+    "source": "guards/onnx/guards.py"
+  },
+  "onnx.legal": {
+    "parameters": [
+      "model_id",
+      "threshold"
+    ],
+    "required": [],
+    "variadic": true,
+    "source": "guards/onnx/guards.py"
+  },
+  "onnx.toxicity": {
+    "parameters": [
+      "model_id",
+      "threshold"
+    ],
+    "required": [],
+    "variadic": true,
+    "source": "guards/onnx/guards.py"
+  },
+  "onnx.pii": {
+    "parameters": [
+      "model_id",
+      "threshold"
+    ],
+    "required": [],
+    "variadic": true,
+    "source": "guards/onnx/guards.py"
+  },
+  "onnx.sentiment": {
+    "parameters": [
+      "model_id",
+      "threshold",
+      "target_sentiment"
+    ],
+    "required": [],
+    "variadic": true,
+    "source": "guards/onnx/guards.py"
+  },
+  "business.financial_advice_onnx": {
+    "parameters": [
+      "model_config",
+      "threshold",
+      "severity",
+      "fallback_enabled"
+    ],
+    "required": [],
+    "variadic": false,
+    "source": "guards/business/onnx_models.py"
+  },
+  "business.legal_advice_onnx": {
+    "parameters": [
+      "model_config",
+      "threshold",
+      "severity"
+    ],
+    "required": [],
+    "variadic": false,
+    "source": "guards/business/onnx_models.py"
+  },
+  "business.compliance_onnx": {
+    "parameters": [
+      "model_config",
+      "threshold",
+      "compliance_categories",
+      "severity"
+    ],
+    "required": [],
+    "variadic": false,
+    "source": "guards/business/onnx_models.py"
+  },
+  "business.financial_compliance": {
+    "parameters": [
+      "company_profile",
+      "require_disclaimers",
+      "block_guarantees",
+      "severity"
+    ],
+    "required": [],
+    "variadic": false,
+    "source": "guards/business/guards.py"
+  },
+  "business.competitor_protection": {
+    "parameters": [
+      "competitors",
+      "block_recommendations",
+      "severity"
+    ],
+    "required": [],
+    "variadic": false,
+    "source": "guards/business/guards.py"
+  },
+  "business.professional_liability": {
+    "parameters": [
+      "blocked_advice_types",
+      "severity"
+    ],
+    "required": [],
+    "variadic": false,
+    "source": "guards/business/guards.py"
+  },
+  "business.brand_tone": {
+    "parameters": [
+      "unprofessional_patterns",
+      "required_tone",
+      "severity"
+    ],
+    "required": [],
+    "variadic": false,
+    "source": "guards/business/guards.py"
+  },
+  "business.block_hosts": {
+    "parameters": [
+      "blocked_hosts",
+      "severity"
+    ],
+    "required": [
+      "blocked_hosts"
+    ],
+    "variadic": false,
+    "source": "guards/business/guards.py"
+  },
+  "mcp.loop.detect": {
+    "parameters": [
+      "max_retries",
+      "window_seconds",
+      "call_type",
+      "severity"
+    ],
+    "required": [],
+    "variadic": false,
+    "source": "guards/mcp/guards.py"
+  },
+  "mcp.circular.detect": {
+    "parameters": [
+      "severity"
+    ],
+    "required": [],
+    "variadic": false,
+    "source": "guards/mcp/guards.py"
+  },
+  "mcp.rate.limit": {
+    "parameters": [
+      "limits",
+      "default_limit"
+    ],
+    "required": [],
+    "variadic": false,
+    "source": "guards/mcp/guards.py"
+  },
+  "mcp.args.validate": {
+    "parameters": [
+      "max_arg_length",
+      "forbidden_patterns"
+    ],
+    "required": [],
+    "variadic": false,
+    "source": "guards/mcp/guards.py"
+  },
+  "mcp.args.pii": {
+    "parameters": [
+      "pii_types",
+      "action"
+    ],
+    "required": [],
+    "variadic": false,
+    "source": "guards/mcp/guards.py"
+  },
+  "mcp.result.size": {
+    "parameters": [
+      "max_size_bytes",
+      "action"
+    ],
+    "required": [],
+    "variadic": false,
+    "source": "guards/mcp/guards.py"
+  },
+  "mcp.result.toxicity": {
+    "parameters": [
+      "categories",
+      "threshold",
+      "action"
+    ],
+    "required": [],
+    "variadic": false,
+    "source": "guards/mcp/guards.py"
+  },
+  "mcp.tool.allowlist": {
+    "parameters": [
+      "allowed_methods",
+      "severity"
+    ],
+    "required": [
+      "allowed_methods"
+    ],
+    "variadic": false,
+    "source": "guards/mcp/guards.py"
+  },
+  "mcp.result.pii": {
+    "parameters": [
+      "pii_types",
+      "action"
+    ],
+    "required": [],
+    "variadic": false,
+    "source": "guards/mcp/guards.py"
+  },
+  "mcp.flow.pii_leak": {
+    "parameters": [
+      "from_pattern",
+      "to_pattern",
+      "check",
+      "severity"
+    ],
+    "required": [],
+    "variadic": false,
+    "source": "guards/mcp/guards.py"
+  },
+  "toxicity.detect": {
+    "parameters": [
+      "categories",
+      "threshold",
+      "severity"
+    ],
+    "required": [],
+    "variadic": false,
+    "source": "guards/toxicity/guards.py"
+  },
+  "toxicity.block": {
+    "parameters": [
+      "categories",
+      "threshold",
+      "severity"
+    ],
+    "required": [],
+    "variadic": false,
+    "source": "guards/toxicity/guards.py"
+  },
+  "safety.toxicity.local_onnx": {
+    "parameters": [
+      "model",
+      "threshold",
+      "gated_by",
+      "enabled"
+    ],
+    "required": [],
+    "variadic": false,
+    "source": "guards/safety/guards.py"
+  },
+  "safety.jailbreak.local_onnx": {
+    "parameters": [
+      "model",
+      "threshold",
+      "gated_by",
+      "enabled"
+    ],
+    "required": [],
+    "variadic": false,
+    "source": "guards/safety/guards.py"
+  },
+  "safety.ner.local_onnx": {
+    "parameters": [
+      "model",
+      "entities",
+      "gated_by",
+      "enabled"
+    ],
+    "required": [],
+    "variadic": false,
+    "source": "guards/safety/guards.py"
+  },
+  "politics.block": {
+    "parameters": [
+      "patterns_strong",
+      "patterns_weak",
+      "allow",
+      "threshold",
+      "severity"
+    ],
+    "required": [
+      "patterns_strong"
+    ],
+    "variadic": false,
+    "source": "guards/politics/guards.py"
+  },
+  "politics.detect": {
+    "parameters": [
+      "patterns_strong",
+      "patterns_weak",
+      "allow",
+      "severity"
+    ],
+    "required": [
+      "patterns_strong"
+    ],
+    "variadic": false,
+    "source": "guards/politics/guards.py"
+  },
+  "schema.validate.json": {
+    "parameters": [
+      "schema",
+      "severity"
+    ],
+    "required": [
+      "schema"
+    ],
+    "variadic": false,
+    "source": "guards/schema/guards.py"
+  },
+  "schema.validate.structure": {
+    "parameters": [
+      "required_fields",
+      "allowed_fields",
+      "field_types",
+      "severity"
+    ],
+    "required": [],
+    "variadic": false,
+    "source": "guards/schema/guards.py"
+  }
+}

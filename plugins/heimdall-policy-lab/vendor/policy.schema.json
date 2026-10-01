@@ -1,0 +1,179 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "guards",
+    "compose"
+  ],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "description": "Policy version (SemVer)"
+    },
+    "policy_id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_][a-zA-Z0-9_.-]*$",
+      "description": "Unique policy identifier"
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 500,
+      "description": "Human-readable policy description"
+    },
+    "guards": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "target"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_][a-zA-Z0-9_.]*$",
+            "description": "Guard identifier (must be registered)"
+          },
+          "target": {
+            "type": "string",
+            "description": "JSONPath target for guard"
+          },
+          "with": {
+            "type": "object",
+            "description": "Guard parameters"
+          },
+          "with_ref": {
+            "type": "string",
+            "description": "Reference to external parameters file"
+          },
+          "tier": {
+            "type": "string",
+            "enum": [
+              "T0",
+              "T1",
+              "T2"
+            ],
+            "description": "Performance tier"
+          },
+          "enabled": {
+            "type": "boolean",
+            "description": "Whether this guard is enabled"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "compose": {
+      "type": "object",
+      "required": [
+        "root"
+      ],
+      "properties": {
+        "root": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10000,
+          "description": "Root composition expression"
+        }
+      },
+      "patternProperties": {
+        "^[a-zA-Z_][a-zA-Z0-9_]*$": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10000,
+          "description": "Named composition phase"
+        }
+      },
+      "additionalProperties": false
+    },
+    "thresholds": {
+      "type": "object",
+      "description": "Tier gating thresholds",
+      "patternProperties": {
+        "^t[0-2]$": {
+          "type": "object",
+          "patternProperties": {
+            "^gate_t[0-2]$": {
+              "type": "number",
+              "minimum": 0.0,
+              "maximum": 1.0
+            }
+          }
+        }
+      }
+    },
+    "onnx_models": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "ONNX model identifier"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-fA-F0-9]{64}$",
+            "description": "Expected SHA256 hash of model file"
+          },
+          "quant": {
+            "type": "string",
+            "enum": [
+              "fp32",
+              "fp16",
+              "int8"
+            ],
+            "description": "Quantization level"
+          }
+        }
+      }
+    },
+    "failure_mode": {
+      "type": "string",
+      "enum": [
+        "block",
+        "redact",
+        "warn"
+      ],
+      "default": "block",
+      "description": "What to do on policy violation"
+    },
+    "tier_hints": {
+      "type": "object",
+      "description": "Performance tier hints for guards",
+      "patternProperties": {
+        "^[a-zA-Z0-9_.]+$": {
+          "type": "string",
+          "enum": [
+            "fast",
+            "medium",
+            "slow"
+          ]
+        }
+      }
+    },
+    "performance": {
+      "type": "object",
+      "description": "Performance configuration",
+      "properties": {
+        "max_latency_ms": {
+          "type": "number",
+          "minimum": 0
+        },
+        "fail_mode": {
+          "type": "string",
+          "enum": [
+            "open",
+            "closed"
+          ]
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

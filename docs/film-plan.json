@@ -1,0 +1,101 @@
+{
+  "project_id": "lost-key",
+  "title": "The borrowed key",
+  "target_duration_ms": 12000,
+  "initial_facts": [
+    {
+      "key": "key.owner",
+      "value": "Mira"
+    }
+  ],
+  "languages": [
+    "en"
+  ],
+  "shots": [
+    {
+      "shot_id": "offer",
+      "duration_ms": 4000,
+      "purpose": "Establish the choice",
+      "action": "Mira raises the brass key while Jo waits at the gate.",
+      "present": [
+        "Mira",
+        "Jo",
+        "Key"
+      ],
+      "requires": [
+        {
+          "key": "key.owner",
+          "value": "Mira"
+        }
+      ],
+      "effects": [],
+      "dialogue": [
+        {
+          "cue_id": "offer-line",
+          "start_ms": 500,
+          "end_ms": 2500,
+          "text": "Will you bring it back?",
+          "language": "en",
+          "speaker": "Mira"
+        }
+      ]
+    },
+    {
+      "shot_id": "handoff",
+      "duration_ms": 4000,
+      "purpose": "Make the decision visible",
+      "action": "Mira places the key in Jo’s open palm.",
+      "present": [
+        "Mira",
+        "Jo",
+        "Key"
+      ],
+      "requires": [
+        {
+          "key": "key.owner",
+          "value": "Mira"
+        }
+      ],
+      "effects": [
+        {
+          "key": "key.owner",
+          "value": "Jo"
+        }
+      ],
+      "depends_on": [
+        "offer"
+      ]
+    },
+    {
+      "shot_id": "departure",
+      "duration_ms": 4000,
+      "purpose": "Show the consequence",
+      "action": "Jo unlocks the gate while Mira watches.",
+      "present": [
+        "Mira",
+        "Jo",
+        "Key"
+      ],
+      "requires": [
+        {
+          "key": "key.owner",
+          "value": "Jo"
+        }
+      ],
+      "effects": [],
+      "depends_on": [
+        "handoff"
+      ],
+      "dialogue": [
+        {
+          "cue_id": "promise",
+          "start_ms": 0,
+          "end_ms": 1500,
+          "text": "Before the sun goes down.",
+          "language": "en",
+          "speaker": "Jo"
+        }
+      ]
+    }
+  ]
+}

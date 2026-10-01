@@ -1,0 +1,23 @@
+{
+  "policy_id": "film_tools",
+  "description": "Restrict permitted tool names for a film assistant.",
+  "guards": [
+    {
+      "id": "tools.allowlist",
+      "target": "tool_calls",
+      "with": {
+        "allowed_tools": [
+          "read_story",
+          "plan_shots"
+        ]
+      }
+    }
+  ],
+  "compose": {
+    "root": "tools_allowlist"
+  },
+  "failure_mode": "block",
+  "performance": {
+    "fail_mode": "closed"
+  }
+}

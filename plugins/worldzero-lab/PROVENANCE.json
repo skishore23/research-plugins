@@ -1,0 +1,182 @@
+{
+  "repository": "https://github.com/skishore23/worldzero",
+  "commit": "590b9e374f5a343279091be125b2eb2731997105",
+  "license": "Apache-2.0",
+  "files": [
+    {
+      "source": "worldzero/agent_sdk.py",
+      "packaged": "vendor/worldzero/agent_sdk.py",
+      "sha256": "0bcfec313913b72ebfca48deecc445d17bcb4f9c906745a6f2d677419fbe0412"
+    },
+    {
+      "source": "worldzero/causal_evidence.py",
+      "packaged": "vendor/worldzero/causal_evidence.py",
+      "sha256": "eb5afbb9bf4c21222d44fe21a7b6d449982c755a76c5e2dad941ead659c9b8d2"
+    },
+    {
+      "source": "worldzero/server.py",
+      "packaged": "vendor/worldzero/server.py",
+      "sha256": "cb8c1d5a680909228636f3f5b0746092add57f9a6ddab02b671974ed191d0c84"
+    },
+    {
+      "source": "worldzero/viewer.py",
+      "packaged": "vendor/worldzero/viewer.py",
+      "sha256": "c3c86cd1e05eb0579ceec16d663ea4ae8ef59ec2af6ced8f8370fe0956bd7b8f"
+    },
+    {
+      "source": "worldzero/kernel.py",
+      "packaged": "vendor/worldzero/kernel.py",
+      "sha256": "1e836846a8a0ac57ccaa3dcae2b9b90b0b29b34ecc711ee55097d5b32581810d"
+    },
+    {
+      "source": "worldzero/benchmark.py",
+      "packaged": "vendor/worldzero/benchmark.py",
+      "sha256": "975aa64c48039e5069280549d337b9508ccd348d365a9ed7c8a2fee6f8ab19ac"
+    },
+    {
+      "source": "worldzero/util.py",
+      "packaged": "vendor/worldzero/util.py",
+      "sha256": "4b393c3031b790b4001686e27f278d54f40abd0401208bb9f715bd7ab67d4270"
+    },
+    {
+      "source": "worldzero/causal_scaffold.py",
+      "packaged": "vendor/worldzero/causal_scaffold.py",
+      "sha256": "a7cccae0b6083fe8d32a1ccd6a8a63bc322e27fe26fa42c5d9b94d988af8f7a8"
+    },
+    {
+      "source": "worldzero/protocol.py",
+      "packaged": "vendor/worldzero/protocol.py",
+      "sha256": "1af77b55dcf4d0574acd5e4a5d0913184126a03ff5b30f7184ac052a5260c548"
+    },
+    {
+      "source": "worldzero/scoring.py",
+      "packaged": "vendor/worldzero/scoring.py",
+      "sha256": "d71984cb37b88249af3c388fec9715d835753609720724f71570bb1a891bf6f0"
+    },
+    {
+      "source": "worldzero/mathcheck.py",
+      "packaged": "vendor/worldzero/mathcheck.py",
+      "sha256": "89157ac506ebff5d3da24bd2259719e09c55d8cd587044ba36bd685572d1423f"
+    },
+    {
+      "source": "worldzero/__init__.py",
+      "packaged": "vendor/worldzero/__init__.py",
+      "sha256": "edf6101aa635650aea975cacd4965f6e8163e4c577cb9f972f2880d21403a7d6"
+    },
+    {
+      "source": "worldzero/llm.py",
+      "packaged": "vendor/worldzero/llm.py",
+      "sha256": "a81ef83731df6ecc0c490e8836717d4428345caeef7e25fe8938e8da3c9d8a89"
+    },
+    {
+      "source": "worldzero/core.py",
+      "packaged": "vendor/worldzero/core.py",
+      "sha256": "72fcead3e1c437e6dbdd317bb395db9a9658b1d0afc8ed82abe8f2865eca6cb7"
+    },
+    {
+      "source": "worldzero/observatory.html",
+      "packaged": "vendor/worldzero/observatory.html",
+      "sha256": "1eaac7514ffbafcb8c18cd029b10203588a44323943b6e8f69500437d567fe28"
+    },
+    {
+      "source": "worldzero/evidence_ledger.py",
+      "packaged": "vendor/worldzero/evidence_ledger.py",
+      "sha256": "c085dbf399fd901f3917cc83c78e29932f1eacb0d15cfbe3d6a407346d3b2e5a"
+    },
+    {
+      "source": "worldzero/experiment.py",
+      "packaged": "vendor/worldzero/experiment.py",
+      "sha256": "068bbf0533ac9b9f51e8cf94a85a0d17bf0d22f07d3b3f79a010ef6f180df4a1"
+    },
+    {
+      "source": "worldzero/cli.py",
+      "packaged": "vendor/worldzero/cli.py",
+      "sha256": "42d10d418e03940bd818e318adce616640d3e9135d04dfc884da0b3e6c6674c6"
+    },
+    {
+      "source": "worldzero/scoring_contracts.py",
+      "packaged": "vendor/worldzero/scoring_contracts.py",
+      "sha256": "6571286c978d021c0a9e267077162ecdb652c6d383025333fedd07ac9a4be197"
+    },
+    {
+      "source": "worldzero/levels.py",
+      "packaged": "vendor/worldzero/levels.py",
+      "sha256": "89d858a96d7331fad2db9ca05c4674fc2e8bd4c0ae014567e7c5a3f06ba091bb"
+    },
+    {
+      "source": "worldzero/release_hygiene.py",
+      "packaged": "vendor/worldzero/release_hygiene.py",
+      "sha256": "fea00b8f219848578c5f6831e933999d5828d0892c0d08b01e87218d8a7ad128"
+    },
+    {
+      "source": "worldzero/policies.py",
+      "packaged": "vendor/worldzero/policies.py",
+      "sha256": "1a0940f863aaf8c2ea255821d6fb0d3ee61896b8725121d126b9ae5663624620"
+    },
+    {
+      "source": "worldzero/__main__.py",
+      "packaged": "vendor/worldzero/__main__.py",
+      "sha256": "cf7390a2508a0fcad4777a4a629fc5212ab655cb45845975995f835676a834e3"
+    },
+    {
+      "source": "worldzero/discovery_audit.py",
+      "packaged": "vendor/worldzero/discovery_audit.py",
+      "sha256": "2cb6467816d28539adce3cedc4b83c3cde1092982fa1fbc936b67374ed6f4e28"
+    },
+    {
+      "source": "worldzero/laws/registry.py",
+      "packaged": "vendor/worldzero/laws/registry.py",
+      "sha256": "31f7987001b814efb34dbf16c746c285b7d009b6135982fb3b33eda72265600d"
+    },
+    {
+      "source": "worldzero/laws/official_registry.json",
+      "packaged": "vendor/worldzero/laws/official_registry.json",
+      "sha256": "bb86d418364ef1cc31421b52396c49fed583c8c2f6d6f45f4358fc6e86135fae"
+    },
+    {
+      "source": "worldzero/laws/__init__.py",
+      "packaged": "vendor/worldzero/laws/__init__.py",
+      "sha256": "46b24a1b1f8efb6c757528129299390deb6b8d11093500e805cd0d545c04faaa"
+    },
+    {
+      "source": "worldzero/laws/types.py",
+      "packaged": "vendor/worldzero/laws/types.py",
+      "sha256": "3cb446ea8dc3dfa178f3d4e914f1ebf6543d7e1a9e6a1787394856e089d7cd95"
+    },
+    {
+      "source": "worldzero/laws/testing.py",
+      "packaged": "vendor/worldzero/laws/testing.py",
+      "sha256": "29a63adc109c2b3a937bcd22c84fa90258d04082418e296fcee337c6bf2a3835"
+    },
+    {
+      "source": "worldzero/laws/base.py",
+      "packaged": "vendor/worldzero/laws/base.py",
+      "sha256": "0efaecdcb631ab0042311886b2b2560d91ac227dabb590ec53516a3eb870288b"
+    },
+    {
+      "source": "worldzero/laws/builtin/null.py",
+      "packaged": "vendor/worldzero/laws/builtin/null.py",
+      "sha256": "78884f95835fbd122df1faf95dc0d94132e08f76b1ce6c1179c570c69857a747"
+    },
+    {
+      "source": "worldzero/laws/builtin/__init__.py",
+      "packaged": "vendor/worldzero/laws/builtin/__init__.py",
+      "sha256": "45fed763e51ad2b934591ccc8f8693c00d337781aa521a6b9b76958702c3d7d1"
+    },
+    {
+      "source": "worldzero/laws/builtin/delayed_transformation.py",
+      "packaged": "vendor/worldzero/laws/builtin/delayed_transformation.py",
+      "sha256": "16e4bd7d6c89db8e59ee16cf9ceb062e16549fca4178244bcc1c013162d43bd5"
+    },
+    {
+      "source": "worldzero/laws/builtin/inhibition.py",
+      "packaged": "vendor/worldzero/laws/builtin/inhibition.py",
+      "sha256": "addf49a47e38ffd2ae7a80a3114e589f478e41067dd8fc6ad9c494095ba24ac3"
+    },
+    {
+      "source": "worldzero/laws/builtin/catalysis.py",
+      "packaged": "vendor/worldzero/laws/builtin/catalysis.py",
+      "sha256": "ebd17c6c5adb27cd502001ad753d8fbb36cfc46531ee3cee3bc9577e4f004ca2"
+    }
+  ]
+}

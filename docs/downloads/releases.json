@@ -1,0 +1,23 @@
+[
+  {
+    "name": "comfy-story-planner",
+    "version": "0.1.0",
+    "file": "comfy-story-planner-0.1.0.zip",
+    "sha256": "16f31574b967a67d4d07c3d3e7844aaf8acf30a531acbd98a91314d8211bc3fd",
+    "bytes": 881202
+  },
+  {
+    "name": "heimdall-policy-lab",
+    "version": "0.1.0",
+    "file": "heimdall-policy-lab-0.1.0.zip",
+    "sha256": "30cea037625455155f946c7aa428c75f9bb2fbae3cc4fca777b70596d02014d4",
+    "bytes": 906076
+  },
+  {
+    "name": "worldzero-lab",
+    "version": "0.1.0",
+    "file": "worldzero-lab-0.1.0.zip",
+    "sha256": "fd4e618cb3f92eeb52327fb04d5e95656ada04ac5f39e02a8cd6be3ea3968a79",
+    "bytes": 1208059
+  }
+]
